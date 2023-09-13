@@ -1,5 +1,5 @@
 [package]
-name = "liquid-bin"
+name = "loose-liquid-bin"
 version = "0.26.3"
 authors = ["Ed Page <eopage@gmail.com>"]
 description = "The liquid templating language for Rust"

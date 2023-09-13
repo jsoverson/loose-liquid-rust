@@ -1,5 +1,5 @@
 [package]
-name = "liquid-derive"
+name = "loose-liquid-derive"
 version = "0.26.4"
 authors = ["Pedro Gonçalo Correia <goncalerta@gmail.com>"]
 description = "The liquid templating language for Rust"
