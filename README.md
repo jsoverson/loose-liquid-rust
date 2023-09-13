@@ -1,5 +1,17 @@
-liquid-rust
+loose-liquid-rust
 ===========
+
+    ********************************************************************************
+    *               NOTE: THIS IS A TEMPORARY FORK OF LIQUID-RUST                  *
+    *                                                                              *
+    * Once either of the following PRs (or suitable) lands this will be deprecated *
+    * - https://github.com/cobalt-org/liquid-rust/pull/496                         *
+    * - https://github.com/cobalt-org/liquid-rust/pull/492                         *
+    ********************************************************************************
+
+
+*Original README below*
+
 
 > [Liquid templating](http://liquidmarkup.org/) for Rust
 

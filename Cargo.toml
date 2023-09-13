@@ -1,13 +1,11 @@
 [workspace]
 resolver = "2"
-members = [
-  "crates/*",
-]
+members = ["crates/*"]
 
 [workspace.package]
 license = "MIT OR Apache-2.0"
 edition = "2021"
-rust-version = "1.70.0"  # MSRV
+rust-version = "1.70.0" # MSRV
 include = [
   "build.rs",
   "src/**/*",
@@ -16,11 +14,11 @@ include = [
   "LICENSE*",
   "README.md",
   "benches/**/*",
-  "examples/**/*"
+  "examples/**/*",
 ]
 
 [package]
-name = "liquid"
+name = "loose-liquid"
 version = "0.26.4"
 description = "The liquid templating language for Rust"
 repository = "https://github.com/cobalt-org/liquid-rust"
@@ -39,11 +37,11 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [package.metadata.release]
 pre-release-replacements = [
-  {file="CHANGELOG.md", search="Unreleased", replace="{{version}}", min=1},
-  {file="CHANGELOG.md", search="\\.\\.\\.HEAD", replace="...{{tag_name}}", exactly=1},
-  {file="CHANGELOG.md", search="ReleaseDate", replace="{{date}}", min=1},
-  {file="CHANGELOG.md", search="<!-- next-header -->", replace="<!-- next-header -->\n## [Unreleased] - ReleaseDate\n", exactly=1},
-  {file="CHANGELOG.md", search="<!-- next-url -->", replace="<!-- next-url -->\n[Unreleased]: https://github.com/assert-rs/predicates-rs/compare/{{tag_name}}...HEAD", exactly=1},
+  { file = "CHANGELOG.md", search = "Unreleased", replace = "{{version}}", min = 1 },
+  { file = "CHANGELOG.md", search = "\\.\\.\\.HEAD", replace = "...{{tag_name}}", exactly = 1 },
+  { file = "CHANGELOG.md", search = "ReleaseDate", replace = "{{date}}", min = 1 },
+  { file = "CHANGELOG.md", search = "<!-- next-header -->", replace = "<!-- next-header -->\n## [Unreleased] - ReleaseDate\n", exactly = 1 },
+  { file = "CHANGELOG.md", search = "<!-- next-url -->", replace = "<!-- next-url -->\n[Unreleased]: https://github.com/assert-rs/predicates-rs/compare/{{tag_name}}...HEAD", exactly = 1 },
 ]
 
 [features]
