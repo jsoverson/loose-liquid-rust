@@ -33,7 +33,7 @@ time = { version = "0.3", default-features = false, features = [
 ] }
 serde = { version = "1.0.157", features = ["derive"] }
 kstring = { version = "2.0", features = ["serde"] }
-loose-liquid-derive = { version = "^0.26.4", path = "../derive", optional = true }
+liquid-derive = { package = "loose-liquid-derive", version = "^0.26.4", path = "../derive", optional = true }
 
 [dev-dependencies]
 serde_yaml = "0.8"
@@ -41,4 +41,4 @@ snapbox = "0.4.12"
 
 [features]
 default = []
-derive = ["loose-liquid-derive"]
+derive = ["liquid-derive"]

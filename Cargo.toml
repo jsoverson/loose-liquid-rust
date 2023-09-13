@@ -46,13 +46,13 @@ pre-release-replacements = [
 
 [features]
 default = ["stdlib"]
-stdlib = ["loose-liquid-lib/stdlib"]
+stdlib = ["liquid-lib/stdlib"]
 
 [dependencies]
 doc-comment = "0.3"
-loose-liquid-core = { version = "^0.26.4", path = "crates/core" }
-loose-liquid-derive = { version = "^0.26.4", path = "crates/derive" }
-loose-liquid-lib = { version = "^0.26.4", path = "crates/lib", optional = true }
+liquid-core = { package = "loose-liquid-core", version = "^0.26.4", path = "crates/core" }
+liquid-derive = { package = "loose-liquid-derive", version = "^0.26.4", path = "crates/derive" }
+liquid-lib = { package = "loose-liquid-lib", version = "^0.26.4", path = "crates/lib", optional = true }
 serde = { version = "1.0.157", features = ["derive"] }
 
 [dev-dependencies]

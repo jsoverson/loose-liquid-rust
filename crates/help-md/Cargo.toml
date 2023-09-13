@@ -18,4 +18,4 @@ all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
-loose-liquid-core = { version = "^0.26.4", path = "../core" }
+liquid-core = { package = "loose-liquid-core", version = "^0.26.4", path = "../core" }
